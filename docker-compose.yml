@@ -2,23 +2,47 @@ version: "3.8"
 
 services:
   backend:
-    build: ./backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
     ports:
-      - "8000:8000"
+      - "3000:3000"
+    volumes:
+      - ./backend:/app
     networks:
       - backend
   frontend:
-    build: ./frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
     ports:
       - "4200:4200"
     depends_on:
       - backend
     networks:
       - backend
+    volumes:
+      - ./frontend:/app
 
 networks:
   backend:
     driver: bridge
+
+volumes:
+  backend:
+    name: backend
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./backend
+  frontend:
+    name: frontend
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./frontend
 
     # depends_on:
     #   - postgres

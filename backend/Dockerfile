@@ -1,17 +1,21 @@
-# Use the official Node image as the base image
-FROM node:20
+FROM node:20.10.0
 
-# Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json to install dependencies
+# Copy package.json and package-lock.json first to leverage Docker cache
 COPY package*.json ./
 
-# Install dependencies
+# Install Next.js and other dependencies
+# RUN npm install
+RUN npm install -g @nestjs/cli
+RUN npm install fs-extra
 RUN npm install
-
-# Copy the entire application
 COPY . .
+EXPOSE 4200
+CMD ["npm", "run", "start"]
+CMD ["npm", "run", "start:debug"]
+# WORKDIR /app/app
+# CMD ["tail", "-f", "/dev/null"]
+# CMD ["ls", "-l"]
+# CMD ["pwd"]
 
-# Build the Angular app
-RUN npm run build
