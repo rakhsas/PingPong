@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    networks:
+      - backend
+  frontend:
+    build: ./frontend
+    ports:
+      - "4200:4200"
+    depends_on:
+      - backend
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+
+    # depends_on:
+    #   - postgres
+    # environment:
+    #   ./backend/.env
+  # postrgres:
+  #   build: ./postgres
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - ./postgres:/app
+  #   networks:
+  #     - backend
