@@ -1,0 +1,102 @@
+[{
+    "message": "User info from Google",
+    "user": {
+        "id": "71569742",
+        "displayName": "Rida Akhsas",
+        "username": "rakhsas",
+        "profileUrl": "https://github.com/rakhsas",
+        "photos": [
+            {
+                "value": "https://avatars.githubusercontent.com/u/71569742?v=4"
+            }
+        ],
+        "provider": "github",
+        "_raw": "{\"login\":\"rakhsas\",\"id\":71569742,\"node_id\":\"MDQ6VXNlcjcxNTY5NzQy\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/71569742?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/rakhsas\",\"html_url\":\"https://github.com/rakhsas\",\"followers_url\":\"https://api.github.com/users/rakhsas/followers\",\"following_url\":\"https://api.github.com/users/rakhsas/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/rakhsas/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/rakhsas/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/rakhsas/subscriptions\",\"organizations_url\":\"https://api.github.com/users/rakhsas/orgs\",\"repos_url\":\"https://api.github.com/users/rakhsas/repos\",\"events_url\":\"https://api.github.com/users/rakhsas/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/rakhsas/received_events\",\"type\":\"User\",\"site_admin\":false,\"name\":\"Rida Akhsas\",\"company\":null,\"blog\":\"\",\"location\":\"Morocco\",\"email\":null,\"hireable\":null,\"bio\":null,\"twitter_username\":null,\"public_repos\":36,\"public_gists\":0,\"followers\":9,\"following\":6,\"created_at\":\"2020-09-19T20:44:47Z\",\"updated_at\":\"2024-01-02T10:01:13Z\"}",
+        "_json": {
+            "login": "rakhsas",
+            "id": 71569742,
+            "node_id": "MDQ6VXNlcjcxNTY5NzQy",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71569742?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/rakhsas",
+            "html_url": "https://github.com/rakhsas",
+            "followers_url": "https://api.github.com/users/rakhsas/followers",
+            "following_url": "https://api.github.com/users/rakhsas/following{/other_user}",
+            "gists_url": "https://api.github.com/users/rakhsas/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/rakhsas/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/rakhsas/subscriptions",
+            "organizations_url": "https://api.github.com/users/rakhsas/orgs",
+            "repos_url": "https://api.github.com/users/rakhsas/repos",
+            "events_url": "https://api.github.com/users/rakhsas/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/rakhsas/received_events",
+            "type": "User",
+            "site_admin": false,
+            "name": "Rida Akhsas",
+            "company": null,
+            "blog": "",
+            "location": "Morocco",
+            "email": null,
+            "hireable": null,
+            "bio": null,
+            "twitter_username": null,
+            "public_repos": 36,
+            "public_gists": 0,
+            "followers": 9,
+            "following": 6,
+            "created_at": "2020-09-19T20:44:47Z",
+            "updated_at": "2024-01-02T10:01:13Z"
+        }
+    }
+},
+
+
+{
+    "message": "User info from Google",
+    "user": {
+        "id": "71569742",
+        "displayName": "Rida Akhsas",
+        "username": "rakhsas",
+        "profileUrl": "https://github.com/rakhsas",
+        "photos": [
+            {
+                "value": "https://avatars.githubusercontent.com/u/71569742?v=4"
+            }
+        ],
+        "provider": "github",
+        "_raw": "{\"login\":\"rakhsas\",\"id\":71569742,\"node_id\":\"MDQ6VXNlcjcxNTY5NzQy\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/71569742?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/rakhsas\",\"html_url\":\"https://github.com/rakhsas\",\"followers_url\":\"https://api.github.com/users/rakhsas/followers\",\"following_url\":\"https://api.github.com/users/rakhsas/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/rakhsas/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/rakhsas/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/rakhsas/subscriptions\",\"organizations_url\":\"https://api.github.com/users/rakhsas/orgs\",\"repos_url\":\"https://api.github.com/users/rakhsas/repos\",\"events_url\":\"https://api.github.com/users/rakhsas/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/rakhsas/received_events\",\"type\":\"User\",\"site_admin\":false,\"name\":\"Rida Akhsas\",\"company\":null,\"blog\":\"\",\"location\":\"Morocco\",\"email\":null,\"hireable\":null,\"bio\":null,\"twitter_username\":null,\"public_repos\":36,\"public_gists\":0,\"followers\":9,\"following\":6,\"created_at\":\"2020-09-19T20:44:47Z\",\"updated_at\":\"2024-01-03T21:21:20Z\"}",
+        "_json": {
+            "login": "rakhsas",
+            "id": 71569742,
+            "node_id": "MDQ6VXNlcjcxNTY5NzQy",
+            "avatar_url": "https://avatars.githubusercontent.com/u/71569742?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/rakhsas",
+            "html_url": "https://github.com/rakhsas",
+            "followers_url": "https://api.github.com/users/rakhsas/followers",
+            "following_url": "https://api.github.com/users/rakhsas/following{/other_user}",
+            "gists_url": "https://api.github.com/users/rakhsas/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/rakhsas/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/rakhsas/subscriptions",
+            "organizations_url": "https://api.github.com/users/rakhsas/orgs",
+            "repos_url": "https://api.github.com/users/rakhsas/repos",
+            "events_url": "https://api.github.com/users/rakhsas/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/rakhsas/received_events",
+            "type": "User",
+            "site_admin": false,
+            "name": "Rida Akhsas",
+            "company": null,
+            "blog": "",
+            "location": "Morocco",
+            "email": null,
+            "hireable": null,
+            "bio": null,
+            "twitter_username": null,
+            "public_repos": 36,
+            "public_gists": 0,
+            "followers": 9,
+            "following": 6,
+            "created_at": "2020-09-19T20:44:47Z",
+            "updated_at": "2024-01-03T21:21:20Z"
+        }
+    }
+}]

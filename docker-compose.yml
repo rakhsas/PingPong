@@ -23,6 +23,26 @@ services:
       - backend
     volumes:
       - ./frontend:/app
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres:/app
+    networks:
+      - backend
+    environment : 
+      - POSTGRES_DB=db1
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_USERNAME=root
+    restart: always
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+    networks:
+      - backend
+    restart: always
 
 networks:
   backend:
@@ -43,6 +63,13 @@ volumes:
       type: none
       o: bind
       device: ./frontend
+  postgres:
+    name: postgres
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./postgres
 
     # depends_on:
     #   - postgres

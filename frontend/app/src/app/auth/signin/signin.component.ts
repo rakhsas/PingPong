@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-signin',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './signin.component.css'
 })
 export class SigninComponent {
-
+  constructor(
+    private authService: AuthService
+  ) { }
+  signWithGoogle() {
+    this.authService.signWithGoogle();
+  }
+  signWithGithub() {
+    this.authService.signWithGithub();
+  }
 }
