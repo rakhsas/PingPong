@@ -5,6 +5,7 @@ import { Strategy, Profile } from "passport-github";
 import { UserService } from './user/user.service';
 
 import { ConfigService } from '@nestjs/config';
+import { use } from "passport";
 
 @Injectable()
 
@@ -26,10 +27,8 @@ export class GithubStrategy extends PassportStrategy(Strategy, 'github') {
 			const name = profile?.displayName?.value;
 			const username = profile?.username?.value;
 			const picture = profile?.photos?.[0].value;
-
 			if (!email || !name || !username || !picture)
 				throw new Error("Incomplete profile Information");
-
 			const isEmailPrivate = profile?._json.email;
 			const userEmail = isEmailPrivate ? 'private-email@example.com' : email;
 			const user = await this.userService.findOrCreateUser({
@@ -38,10 +37,8 @@ export class GithubStrategy extends PassportStrategy(Strategy, 'github') {
 				username,
 				// password
 			})
-			console.log(isEmailPrivate + "    ffjkaskldasa");
+			return user;
 		} catch (error) {
-			
 		}
-		return profile;
 	}
 }

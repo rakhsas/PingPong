@@ -12,8 +12,8 @@ RUN npm install fs-extra
 RUN npm install
 COPY . .
 EXPOSE 4200
-CMD ["npm", "run", "start"]
-CMD ["npm", "run", "start:debug"]
+# CMD ["npm", "run", "start"]
+CMD ["npm", "run", "start:dev"]
 # WORKDIR /app/app
 # CMD ["tail", "-f", "/dev/null"]
 # CMD ["ls", "-l"]

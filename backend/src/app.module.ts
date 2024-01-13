@@ -6,6 +6,8 @@ import { GithubStrategy } from './github.strategy';
 import { ConfigModule, ConfigService } from '@nestjs/config/dist';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserModule } from './user/user.module';
+import { UserService } from './user/user.service';
+import { UserController } from './user/user.controller';
 // import { ConfigModule } from '@nestjs/config';
 
 

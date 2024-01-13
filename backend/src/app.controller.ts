@@ -1,28 +1,29 @@
-import { Controller, Get, UseGuards, Req } from '@nestjs/common';
+import { Controller, Get, UseGuards, Req, Res } from '@nestjs/common';
 import { AppService } from './app.service';
 import { AuthGuard } from '@nestjs/passport';
 
-@Controller()
+@Controller('auth')
 export class AppController {
   constructor(private readonly appService: AppService) {}
-  @Get('auth/google')
+  @Get('google')
   @UseGuards(AuthGuard('google'))
   async googleAuth(@Req() req) {
   }
-  @Get('auth/github')
+  @Get('github')
   @UseGuards(AuthGuard('github'))
   async githubAuth(@Req() req) {
   }
   
-  @Get('auth/google/callback')
+  @Get('google/callback')
   @UseGuards(AuthGuard('google'))
-  googleAuthRedirect(@Req() req) {
-    return this.appService.googleLogin(req);
+  async googleAuthRedirect(@Req() req, @Res() res) {
+    const user = await this.appService.googleLogin(req);
+    return res.redirect('http://localhost:4200/login');
   }
-  @Get('auth/github/callback')
+  @Get('github/callback')
   @UseGuards(AuthGuard('github'))
-  githubAuthRedirect(@Req() req) {
-    return this.appService.googleLogin(req);
+  async githubAuthRedirect(@Req() req, @Res() res) {
+    const user = await this.appService.githubLogin(req);
+    return res.redirect('http://localhost:4200/login');
   }
-
 }

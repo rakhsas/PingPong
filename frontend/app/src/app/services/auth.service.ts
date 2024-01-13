@@ -24,4 +24,5 @@ export class AuthService {
     signWithGithub() {
         window.location.href = environment.apiURL + 'auth/github';
     }
+    
 }
