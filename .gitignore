@@ -1,7 +1,5 @@
 # *.env
 # *environment*.ts
 
-*.env
-*environment*.ts
 backend/config/.env
 frontend/app/src/environments/environment.ts
