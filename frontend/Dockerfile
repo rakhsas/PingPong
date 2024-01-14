@@ -16,5 +16,6 @@ RUN npm install
 # CMD ["ls", "-l"]
 # CMD ["pwd"]
 CMD ["ng", "serve", "--host", "0.0.0.0"]
+# CMD ["npm", "run", "build:serverless"]
 # CMD ["tail", "-f", "/dev/null"]
 

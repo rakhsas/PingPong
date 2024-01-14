@@ -1,7 +1,6 @@
 import { Controller, Get, UseGuards, Req, Res } from '@nestjs/common';
 import { AppService } from './app.service';
 import { AuthGuard } from '@nestjs/passport';
-import { GoogleAuthGuard } from './auth/utils/Guards';
 
 @Controller()
 export class AppController {
@@ -28,8 +27,10 @@ export class AppController {
   //   return res.redirect('http://localhost:4200/login');
   // }
   @Get()
-  @UseGuards(GoogleAuthGuard)
+    @UseGuards(AuthGuard('42'))
   getHello(): string {
     return this.appService.hello();
   }
+
+  
 }

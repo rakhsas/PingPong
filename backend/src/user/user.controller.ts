@@ -28,12 +28,12 @@ export class UserController {
 
 	@Get(':id')
 	findUser(@Param('id') id: string) {
-		return this.userService.viewUser(+id);
+		return this.userService.viewUser(id);
 	}
 
 	@Patch(':id')
 	UpdateUser(@Param('id') id: string, @Body() updatedUser: UpdateUserDto) {
-		return this.userService.updateUser(+id, updatedUser);
+		return this.userService.updateUser(id, updatedUser);
 	}
 
 	@Delete(':id')

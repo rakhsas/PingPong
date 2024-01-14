@@ -1,102 +1,733 @@
-[{
-    "message": "User info from Google",
-    "user": {
-        "id": "71569742",
-        "displayName": "Rida Akhsas",
-        "username": "rakhsas",
-        "profileUrl": "https://github.com/rakhsas",
-        "photos": [
-            {
-                "value": "https://avatars.githubusercontent.com/u/71569742?v=4"
-            }
-        ],
-        "provider": "github",
-        "_raw": "{\"login\":\"rakhsas\",\"id\":71569742,\"node_id\":\"MDQ6VXNlcjcxNTY5NzQy\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/71569742?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/rakhsas\",\"html_url\":\"https://github.com/rakhsas\",\"followers_url\":\"https://api.github.com/users/rakhsas/followers\",\"following_url\":\"https://api.github.com/users/rakhsas/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/rakhsas/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/rakhsas/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/rakhsas/subscriptions\",\"organizations_url\":\"https://api.github.com/users/rakhsas/orgs\",\"repos_url\":\"https://api.github.com/users/rakhsas/repos\",\"events_url\":\"https://api.github.com/users/rakhsas/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/rakhsas/received_events\",\"type\":\"User\",\"site_admin\":false,\"name\":\"Rida Akhsas\",\"company\":null,\"blog\":\"\",\"location\":\"Morocco\",\"email\":null,\"hireable\":null,\"bio\":null,\"twitter_username\":null,\"public_repos\":36,\"public_gists\":0,\"followers\":9,\"following\":6,\"created_at\":\"2020-09-19T20:44:47Z\",\"updated_at\":\"2024-01-02T10:01:13Z\"}",
-        "_json": {
-            "login": "rakhsas",
-            "id": 71569742,
-            "node_id": "MDQ6VXNlcjcxNTY5NzQy",
-            "avatar_url": "https://avatars.githubusercontent.com/u/71569742?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/rakhsas",
-            "html_url": "https://github.com/rakhsas",
-            "followers_url": "https://api.github.com/users/rakhsas/followers",
-            "following_url": "https://api.github.com/users/rakhsas/following{/other_user}",
-            "gists_url": "https://api.github.com/users/rakhsas/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/rakhsas/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/rakhsas/subscriptions",
-            "organizations_url": "https://api.github.com/users/rakhsas/orgs",
-            "repos_url": "https://api.github.com/users/rakhsas/repos",
-            "events_url": "https://api.github.com/users/rakhsas/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/rakhsas/received_events",
-            "type": "User",
-            "site_admin": false,
-            "name": "Rida Akhsas",
-            "company": null,
-            "blog": "",
-            "location": "Morocco",
-            "email": null,
-            "hireable": null,
-            "bio": null,
-            "twitter_username": null,
-            "public_repos": 36,
-            "public_gists": 0,
-            "followers": 9,
-            "following": 6,
-            "created_at": "2020-09-19T20:44:47Z",
-            "updated_at": "2024-01-02T10:01:13Z"
-        }
-    }
-},
-
-
+// d7fe67463a5726c15f8af7e7372a82f17907007ce2c3597f95e84c8cf9a4971d
+// 6a8aeb92e7a7fe2911fe5c7c7d61ffc3c55246faa673074a2d350921c743e68d
 {
-    "message": "User info from Google",
-    "user": {
-        "id": "71569742",
-        "displayName": "Rida Akhsas",
-        "username": "rakhsas",
-        "profileUrl": "https://github.com/rakhsas",
-        "photos": [
+  id: '95248',
+  username: 'rakhsas',
+  displayName: 'Rida Akhsas',
+  name: { familyName: 'Akhsas', givenName: 'Rida'
+    },
+  profileUrl: 'https: //api.intra.42.fr/v2/users/rakhsas',
+  emails: [
+        { value: 'rakhsas@student.1337.ma'
+        }
+    ],
+  phoneNumbers: [
+        { value: 'hidden'
+        }
+    ],
+  photos: [
+        { value: undefined
+        }
+    ],
+  provider: '42',
+  _raw: '{
+        "id": 95248,
+        "email": "rakhsas@student.1337.ma",
+        "login": "rakhsas",
+        "first_name": "Rida",
+        "last_name": "Akhsas",
+        "usual_full_name": "Rida Akhsas",
+        "usual_first_name": null,
+        "url": "https://api.intra.42.fr/v2/users/rakhsas",
+        "phone": "hidden",
+        "displayname": "Rida Akhsas",
+        "kind": "student",
+        "image": {
+            "link": "https://cdn.intra.42.fr/users/1f8286f7d5687c6260fb6bca81d05853/rakhsas.JPG",
+            "versions": {
+                "large": "https://cdn.intra.42.fr/users/f82d960c97cb0dbe528d52d87e70362d/large_rakhsas.JPG",
+                "medium": "https://cdn.intra.42.fr/users/6dbe275d2c9b5b57e916bb825f6f9a32/medium_rakhsas.JPG",
+                "small": "https://cdn.intra.42.fr/users/e176aa70e2348f3f3a4af8e5fd2ec114/small_rakhsas.JPG",
+                "micro": "https://cdn.intra.42.fr/users/71b4679091ac8efcff5ea8d93081c549/micro_rakhsas.JPG"
+            }
+        },
+        "staff?": false,
+        "correction_point": 14,
+        "pool_month": "august",
+        "pool_year": "2021",
+        "location": "e1r3p11",
+        "wallet": 145,
+        "anonymize_date": "2027-01-13T00:00:00.000+01:00",
+        "data_erasure_date": "2027-01-13T00:00:00.000+01:00",
+        "created_at": "2021-07-30T10:44:46.656Z",
+        "updated_at": "2024-01-14T09:29:54.607Z",
+        "alumnized_at": null,
+        "alumni?": false,
+        "active?": true,
+        "groups": [],
+        "cursus_users": [
             {
-                "value": "https://avatars.githubusercontent.com/u/71569742?v=4"
+                "grade": null,
+                "level": 6.24,
+                "skills": [
+                    {
+                        "id": 4,
+                        "name": "Unix",
+                        "level": 7.61
+                    },
+                    {
+                        "id": 3,
+                        "name": "Rigor",
+                        "level": 5.22
+                    },
+                    {
+                        "id": 1,
+                        "name": "Algorithms \\u0026 AI",
+                        "level": 5.11
+                    },
+                    {
+                        "id": 14,
+                        "name": "Adaptation \\u0026 creativity",
+                        "level": 1.07
+                    }
+                ],
+                "blackholed_at": null,
+                "id": 132078,
+                "begin_at": "2021-08-02T08:37:00.000Z",
+                "end_at": "2021-08-28T08:37:00.000Z",
+                "cursus_id": 9,
+                "has_coalition": true,
+                "created_at": "2021-07-30T10:44:46.709Z",
+                "updated_at": "2021-07-30T10:44:46.709Z",
+                "user": {
+                    "id": 95248,
+                    "email": "rakhsas@student.1337.ma",
+                    "login": "rakhsas",
+                    "first_name": "Rida",
+                    "last_name": "Akhsas",
+                    "usual_full_name": "Rida Akhsas",
+                    "usual_first_name": null,
+                    "url": "https://api.intra.42.fr/v2/users/rakhsas",
+                    "phone": "hidden",
+                    "displayname": "Rida Akhsas",
+                    "kind": "student",
+                    "image": {
+                        "link": "https://cdn.intra.42.fr/users/1f8286f7d5687c6260fb6bca81d05853/rakhsas.JPG",
+                        "versions": {
+                            "large": "https://cdn.intra.42.fr/users/f82d960c97cb0dbe528d52d87e70362d/large_rakhsas.JPG",
+                            "medium": "https://cdn.intra.42.fr/users/6dbe275d2c9b5b57e916bb825f6f9a32/medium_rakhsas.JPG",
+                            "small": "https://cdn.intra.42.fr/users/e176aa70e2348f3f3a4af8e5fd2ec114/small_rakhsas.JPG",
+                            "micro": "https://cdn.intra.42.fr/users/71b4679091ac8efcff5ea8d93081c549/micro_rakhsas.JPG"
+                        }
+                    },
+                    "staff?": false,
+                    "correction_point": 14,
+                    "pool_month": "august",
+                    "pool_year": "2021",
+                    "location": "e1r3p11",
+                    "wallet": 145,
+                    "anonymize_date": "2027-01-13T00:00:00.000+01:00",
+                    "data_erasure_date": "2027-01-13T00:00:00.000+01:00",
+                    "created_at": "2021-07-30T10:44:46.656Z",
+                    "updated_at": "2024-01-14T09:29:54.607Z",
+                    "alumnized_at": null,
+                    "alumni?": false,
+                    "active?": true
+                },
+                "cursus": {
+                    "id": 9,
+                    "created_at": "2015-11-04T10:58:13.979Z",
+                    "name": "C Piscine",
+                    "slug": "c-piscine",
+                    "kind": "piscine"
+                }
+            },
+            {
+                "grade": "Learner",
+                "level": 8.93,
+                "skills": [
+                    {
+                        "id": 10,
+                        "name": "Network \\u0026 system administration",
+                        "level": 8.21
+                    },
+                    {
+                        "id": 3,
+                        "name": "Rigor",
+                        "level": 7.29
+                    },
+                    {
+                        "id": 17,
+                        "name": "Object-oriented programming",
+                        "level": 5.79
+                    },
+                    {
+                        "id": 2,
+                        "name": "Imperative programming",
+                        "level": 4.92
+                    },
+                    {
+                        "id": 4,
+                        "name": "Unix",
+                        "level": 4.45
+                    },
+                    {
+                        "id": 1,
+                        "name": "Algorithms \\u0026 AI",
+                        "level": 4.04
+                    },
+                    {
+                        "id": 5,
+                        "name": "Graphics",
+                        "level": 3.2800000000000002
+                    }
+                ],
+                "blackholed_at": "2024-09-07T06:00:00.000Z",
+                "id": 189942,
+                "begin_at": "2022-10-05T06:00:00.000Z",
+                "end_at": null,
+                "cursus_id": 21,
+                "has_coalition": true,
+                "created_at": "2022-09-30T23:04:09.564Z",
+                "updated_at": "2022-09-30T23:04:09.564Z",
+                "user": {
+                    "id": 95248,
+                    "email": "rakhsas@student.1337.ma",
+                    "login": "rakhsas",
+                    "first_name": "Rida",
+                    "last_name": "Akhsas",
+                    "usual_full_name": "Rida Akhsas",
+                    "usual_first_name": null,
+                    "url": "https://api.intra.42.fr/v2/users/rakhsas",
+                    "phone": "hidden",
+                    "displayname": "Rida Akhsas",
+                    "kind": "student",
+                    "image": {
+                        "link": "https://cdn.intra.42.fr/users/1f8286f7d5687c6260fb6bca81d05853/rakhsas.JPG",
+                        "versions": {
+                            "large": "https://cdn.intra.42.fr/users/f82d960c97cb0dbe528d52d87e70362d/large_rakhsas.JPG",
+                            "medium": "https://cdn.intra.42.fr/users/6dbe275d2c9b5b57e916bb825f6f9a32/medium_rakhsas.JPG",
+                            "small": "https://cdn.intra.42.fr/users/e176aa70e2348f3f3a4af8e5fd2ec114/small_rakhsas.JPG",
+                            "micro": "https://cdn.intra.42.fr/users/71b4679091ac8efcff5ea8d93081c549/micro_rakhsas.JPG"
+                        }
+                    },
+                    "staff?": false,
+                    "correction_point": 14,
+                    "pool_month": "august",
+                    "pool_year": "2021",
+                    "location": "e1r3p11",
+                    "wallet": 145,
+                    "anonymize_date": "2027-01-13T00:00:00.000+01:00",
+                    "data_erasure_date": "2027-01-13T00:00:00.000+01:00",
+                    "created_at": "2021-07-30T10:44:46.656Z",
+                    "updated_at": "2024-01-14T09:29:54.607Z",
+                    "alumnized_at": null,
+                    "alumni?": false,
+                    "active?": true
+                },
+                "cursus": {
+                    "id": 21,
+                    "created_at": "2019-07-29T08:45:17.896Z",
+                    "name": "42cursus",
+                    "slug": "42cursus",
+                    "kind": "main"
+                }
             }
         ],
-        "provider": "github",
-        "_raw": "{\"login\":\"rakhsas\",\"id\":71569742,\"node_id\":\"MDQ6VXNlcjcxNTY5NzQy\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/71569742?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/rakhsas\",\"html_url\":\"https://github.com/rakhsas\",\"followers_url\":\"https://api.github.com/users/rakhsas/followers\",\"following_url\":\"https://api.github.com/users/rakhsas/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/rakhsas/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/rakhsas/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/rakhsas/subscriptions\",\"organizations_url\":\"https://api.github.com/users/rakhsas/orgs\",\"repos_url\":\"https://api.github.com/users/rakhsas/repos\",\"events_url\":\"https://api.github.com/users/rakhsas/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/rakhsas/received_events\",\"type\":\"User\",\"site_admin\":false,\"name\":\"Rida Akhsas\",\"company\":null,\"blog\":\"\",\"location\":\"Morocco\",\"email\":null,\"hireable\":null,\"bio\":null,\"twitter_username\":null,\"public_repos\":36,\"public_gists\":0,\"followers\":9,\"following\":6,\"created_at\":\"2020-09-19T20:44:47Z\",\"updated_at\":\"2024-01-03T21:21:20Z\"}",
-        "_json": {
-            "login": "rakhsas",
-            "id": 71569742,
-            "node_id": "MDQ6VXNlcjcxNTY5NzQy",
-            "avatar_url": "https://avatars.githubusercontent.com/u/71569742?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/rakhsas",
-            "html_url": "https://github.com/rakhsas",
-            "followers_url": "https://api.github.com/users/rakhsas/followers",
-            "following_url": "https://api.github.com/users/rakhsas/following{/other_user}",
-            "gists_url": "https://api.github.com/users/rakhsas/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/rakhsas/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/rakhsas/subscriptions",
-            "organizations_url": "https://api.github.com/users/rakhsas/orgs",
-            "repos_url": "https://api.github.com/users/rakhsas/repos",
-            "events_url": "https://api.github.com/users/rakhsas/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/rakhsas/received_events",
-            "type": "User",
-            "site_admin": false,
-            "name": "Rida Akhsas",
-            "company": null,
-            "blog": "",
-            "location": "Morocco",
-            "email": null,
-            "hireable": null,
-            "bio": null,
-            "twitter_username": null,
-            "public_repos": 36,
-            "public_gists": 0,
-            "followers": 9,
-            "following": 6,
-            "created_at": "2020-09-19T20:44:47Z",
-            "updated_at": "2024-01-03T21:21:20Z"
+        "projects_users": [
+            {
+                "id": 3462080,
+                "occurrence": 0,
+                "final_mark": null,
+                "status": "in_progress",
+                "validated?": null,
+                "current_team_id": 5385021,
+                "project": {
+                    "id": 1337,
+                    "name": "ft_transcendence",
+                    "slug": "ft_transcendence",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": null,
+                "marked": false,
+                "retriable_at": null,
+                "created_at": "2024-01-01T12:58:29.793Z",
+                "updated_at": "2024-01-01T20:26:34.932Z"
+            },
+            {
+                "id": 3461510,
+                "occurrence": 0,
+                "final_mark": 100,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 5387351,
+                "project": {
+                    "id": 2309,
+                    "name": "CPP Module 09",
+                    "slug": "cpp-module-09",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2024-01-01T12:57:10.256Z",
+                "marked": true,
+                "retriable_at": "2024-01-02T12:57:10.594Z",
+                "created_at": "2023-12-29T22:27:13.772Z",
+                "updated_at": "2024-01-01T12:57:10.632Z"
+            },
+            {
+                "id": 3452109,
+                "occurrence": 0,
+                "final_mark": 100,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 5373716,
+                "project": {
+                    "id": 1346,
+                    "name": "CPP Module 08",
+                    "slug": "cpp-module-08",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2023-12-29T22:26:46.149Z",
+                "marked": true,
+                "retriable_at": "2023-12-30T22:26:46.196Z",
+                "created_at": "2023-12-15T08:42:00.146Z",
+                "updated_at": "2023-12-29T22:26:46.226Z"
+            },
+            {
+                "id": 3373491,
+                "occurrence": 1,
+                "final_mark": 125,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 5372157,
+                "project": {
+                    "id": 1332,
+                    "name": "webserv",
+                    "slug": "webserv",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2023-12-19T22:04:34.990Z",
+                "marked": true,
+                "retriable_at": "2023-12-22T22:04:35.201Z",
+                "created_at": "2023-10-23T14:18:27.859Z",
+                "updated_at": "2023-12-19T22:04:35.493Z"
+            },
+            {
+                "id": 3447468,
+                "occurrence": 0,
+                "final_mark": 100,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 5366901,
+                "project": {
+                    "id": 1345,
+                    "name": "CPP Module 07",
+                    "slug": "cpp-module-07",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2023-12-15T08:41:45.229Z",
+                "marked": true,
+                "retriable_at": "2023-12-16T08:41:45.273Z",
+                "created_at": "2023-12-11T16:31:56.787Z",
+                "updated_at": "2023-12-15T08:41:45.305Z"
+            },
+            {
+                "id": 3437632,
+                "occurrence": 0,
+                "final_mark": 100,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 5352270,
+                "project": {
+                    "id": 1344,
+                    "name": "CPP Module 06",
+                    "slug": "cpp-module-06",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2023-12-11T16:31:38.527Z",
+                "marked": true,
+                "retriable_at": "2023-12-12T16:31:38.560Z",
+                "created_at": "2023-12-03T10:59:31.027Z",
+                "updated_at": "2023-12-11T16:31:38.586Z"
+            },
+            {
+                "id": 3391389,
+                "occurrence": 2,
+                "final_mark": 100,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 5324911,
+                "project": {
+                    "id": 1323,
+                    "name": "Exam Rank 05",
+                    "slug": "exam-rank-05",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2023-12-06T16:50:05.325Z",
+                "marked": true,
+                "retriable_at": "2023-12-06T16:50:05.491Z",
+                "created_at": "2023-11-04T13:59:14.005Z",
+                "updated_at": "2023-12-06T16:50:15.666Z"
+            },
+            {
+                "id": 3361154,
+                "occurrence": 5,
+                "final_mark": 100,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 5265662,
+                "project": {
+                    "id": 1343,
+                    "name": "CPP Module 05",
+                    "slug": "cpp-module-05",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2023-12-03T10:59:19.223Z",
+                "marked": true,
+                "retriable_at": "2023-12-04T10:59:19.268Z",
+                "created_at": "2023-10-15T14:11:24.914Z",
+                "updated_at": "2023-12-03T10:59:19.311Z"
+            },
+            {
+                "id": 3308179,
+                "occurrence": 0,
+                "final_mark": 125,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 5166458,
+                "project": {
+                    "id": 1983,
+                    "name": "Inception",
+                    "slug": "inception",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2023-09-30T15:14:37.324Z",
+                "marked": true,
+                "retriable_at": "2023-10-03T15:14:37.607Z",
+                "created_at": "2023-09-12T21:42:47.546Z",
+                "updated_at": "2023-09-30T15:14:37.620Z"
+            },
+            {
+                "id": 3189131,
+                "occurrence": 0,
+                "final_mark": 100,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 4980979,
+                "project": {
+                    "id": 1342,
+                    "name": "CPP Module 04",
+                    "slug": "cpp-module-04",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2023-08-10T11:16:46.884Z",
+                "marked": true,
+                "retriable_at": "2023-08-11T11:16:47.149Z",
+                "created_at": "2023-07-22T14:44:49.581Z",
+                "updated_at": "2023-08-10T11:16:47.172Z"
+            },
+            {
+                "id": 3174635,
+                "occurrence": 0,
+                "final_mark": 80,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 4959026,
+                "project": {
+                    "id": 1341,
+                    "name": "CPP Module 03",
+                    "slug": "cpp-module-03",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2023-07-22T14:44:32.150Z",
+                "marked": true,
+                "retriable_at": "2023-07-23T14:44:32.183Z",
+                "created_at": "2023-07-17T10:03:41.502Z",
+                "updated_at": "2023-07-22T14:44:32.202Z"
+            },
+            {
+                "id": 3159437,
+                "occurrence": 0,
+                "final_mark": 80,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 4936482,
+                "project": {
+                    "id": 1340,
+                    "name": "CPP Module 02",
+                    "slug": "cpp-module-02",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2023-07-17T10:03:01.065Z",
+                "marked": true,
+                "retriable_at": "2023-07-18T10:03:01.102Z",
+                "created_at": "2023-07-11T12:00:09.934Z",
+                "updated_at": "2023-07-17T10:03:01.118Z"
+            },
+            {
+                "id": 3129091,
+                "occurrence": 1,
+                "final_mark": 100,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 4935044,
+                "project": {
+                    "id": 1339,
+                    "name": "CPP Module 01",
+                    "slug": "cpp-module-01",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2023-07-11T10:54:21.984Z",
+                "marked": true,
+                "retriable_at": "2023-07-12T10:54:22.031Z",
+                "created_at": "2023-06-21T09:11:00.219Z",
+                "updated_at": "2023-07-11T10:54:22.048Z"
+            },
+            {
+                "id": 3083159,
+                "occurrence": 0,
+                "final_mark": 113,
+                "status": "finished",
+                "validated?": true,
+                "current_team_id": 4831256,
+                "project": {
+                    "id": 1326,
+                    "name": "cub3d",
+                    "slug": "cub3d",
+                    "parent_id": null
+                },
+                "cursus_ids": [
+                    21
+                ],
+                "marked_at": "2023-06-20T17:12:15.369Z",
+                "marked": true,
+                "retriable_at": "2023-06-23T17:12:15.620Z",
+                "created_at": "2023-05-03T08:57:34.654Z",
+                "updated_at": "2023-06-20T17:12:15.640Z"
+            }'... 18690 more characters,
+  _json: {
+    id: 95248,
+    email: 'rakhsas@student.1337.ma',
+    login: 'rakhsas',
+    first_name: 'Rida',
+    last_name: 'Akhsas',
+    usual_full_name: 'Rida Akhsas',
+    usual_first_name: null,
+    url: 'https: //api.intra.42.fr/v2/users/rakhsas',
+    phone: 'hidden',
+    displayname: 'Rida Akhsas',
+    kind: 'student',
+    image: {
+      link: 'https: //cdn.intra.42.fr/users/1f8286f7d5687c6260fb6bca81d05853/rakhsas.JPG',
+      versions: [Object
+                    ]
+                },
+    'staff?': false,
+    correction_point: 14,
+    pool_month: 'august',
+    pool_year: '2021',
+    location: 'e1r3p11',
+    wallet: 145,
+    anonymize_date: '2027-01-13T00: 00: 00.000+01: 00',
+    data_erasure_date: '2027-01-13T00: 00: 00.000+01: 00',
+    created_at: '2021-07-30T10: 44: 46.656Z',
+    updated_at: '2024-01-14T09: 29: 54.607Z',
+    alumnized_at: null,
+    'alumni?': false,
+    'active?': true,
+    groups: [],
+    cursus_users: [
+                    [Object
+                    ],
+                    [Object
+                    ]
+                ],
+    projects_users: [
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ]
+                ],
+    languages_users: [
+                    [Object
+                    ],
+                    [Object
+                    ]
+                ],
+    achievements: [
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ],
+                    [Object
+                    ]
+                ],
+    titles: [],
+    titles_users: [],
+    partnerships: [],
+    patroned: [],
+    patroning: [],
+    expertises_users: [],
+    roles: [],
+    campus: [
+                    [Object
+                    ]
+                ],
+    campus_users: [
+                    [Object
+                    ]
+                ]
+            }
         }
-    }
-}]

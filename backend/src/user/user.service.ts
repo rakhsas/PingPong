@@ -2,6 +2,9 @@ import { InjectRepository } from "@nestjs/typeorm";
 import { User } from "./entities/user";
 import { Repository } from "typeorm";
 import { CreateUserDto } from "./dto/create.user";
+import { Injectable } from "@nestjs/common";
+
+@Injectable()
 
 export class UserService {
 	constructor (
@@ -18,12 +21,11 @@ export class UserService {
 	*/
    	async createUser(createUser: CreateUserDto): Promise<User> {
 		const user: User = new User();
-		user.name = createUser.name;
+		user.firstName = createUser.firstName;
+		user.lastName = createUser.lastName;
 		user.username = createUser.username;
 		user.email = createUser.email;
-		user.password = createUser.password;
-		user.gender = createUser.gender;
-		user.name = createUser.name;
+		user.id = createUser.id;
 		return this.userRepository.save(user);
 	}
 	
@@ -37,7 +39,7 @@ export class UserService {
 	/**
 	 * this function is used to find user by id from User Entity.
 	*/
-	viewUser(id: number): Promise<User> {
+	viewUser(id: string): Promise<User> {
 		return this.userRepository.findOne({ where: {id: id} });
 	}
 
@@ -45,7 +47,7 @@ export class UserService {
 	 * this function is used to update user by id from User Entity.
 	*/
 	updateUser(
-		id: number,
+		id: string,
 		updateUser: CreateUserDto
 	): Promise<User> {
 		return this.userRepository.save({
@@ -61,18 +63,18 @@ export class UserService {
 		return this.userRepository.delete(id);
 	}
 
-
-	async findOrCreateUser(userData: Partial<User>): Promise<User> {
-		const { email } = userData;
+	async findOrCreateUser(userData: Partial<User>): Promise<any> {
+		let firstLogin: boolean = false;
+		const { email, firstName, lastName, picture, username, id, provider } = userData;
 	
 		// Check if the user already exists
-		let user = await this.userRepository.findOne({ where: {email} });
+		let user = await this.userRepository.findOne({ where: { email, firstName, lastName, picture, username, id, provider } });
 	
 		// If the user doesn't exist, create a new user
 		if (!user) {
-		  user = await this.userRepository.save(userData);
+		  	user = await this.userRepository.save(userData);
+			firstLogin = true;
 		}
-	
-		return user;
+		return {user, firstLogin};
 	  }
 }

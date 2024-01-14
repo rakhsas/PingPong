@@ -16,13 +16,16 @@ export class AuthService {
     {
         this.URL = environment.apiURL + 'auth/google';
     }
-
+    
     signWithGoogle(){
         window.location.href = this.URL;
     }
-
+    
     signWithGithub() {
         window.location.href = environment.apiURL + 'auth/github';
     }
     
+    signWith42() {
+        window.location.href = environment.apiURL + 'auth/42/login'
+    }
 }

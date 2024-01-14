@@ -31,13 +31,13 @@ export class GithubStrategy extends PassportStrategy(Strategy, 'github') {
 				throw new Error("Incomplete profile Information");
 			const isEmailPrivate = profile?._json.email;
 			const userEmail = isEmailPrivate ? 'private-email@example.com' : email;
-			const user = await this.userService.findOrCreateUser({
-				email: userEmail,
-				name,
-				username,
-				// password
-			})
-			return user;
+			// const user = await this.userService.findOrCreateUser({
+			// 	email: userEmail,
+			// 	name,
+			// 	username,
+			// 	// password
+			// })
+			// return user;
 		} catch (error) {
 		}
 	}

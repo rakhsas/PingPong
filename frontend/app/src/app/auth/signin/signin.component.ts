@@ -30,7 +30,8 @@ export class SigninComponent {
     this.authService.signWithGoogle();
   }
   signWithGithub() {
-    this.authService.signWithGithub();
+    // this.authService.signWithGithub();
+    this.authService.signWith42();
   }
 
 }

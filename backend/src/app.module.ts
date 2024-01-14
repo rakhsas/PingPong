@@ -1,14 +1,13 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { GoogleStrategy } from './auth/utils/google-strategy';
-import { GithubStrategy } from './github.strategy';
 import { ConfigModule, ConfigService } from '@nestjs/config/dist';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserModule } from './user/user.module';
 import { UserService } from './user/user.service';
 import { AuthModule } from './auth/auth.module'; 
 import { UserController } from './user/user.controller';
+import { AuthService } from './auth/auth.service';
 // import { ConfigModule } from '@nestjs/config';
 
 
@@ -25,11 +24,11 @@ import { UserController } from './user/user.controller';
       username: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASSWORD,
       database: process.env.POSTGRES_DATABASE,
+      synchronize: true,
       autoLoadEntities: true,
-      synchronize: true
     }),
     UserModule,
-    AuthModule
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
